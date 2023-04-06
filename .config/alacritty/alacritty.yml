@@ -1,0 +1,47 @@
+key_bindings:
+  - { key: Return, mods: Command, action: ToggleSimpleFullscreen }
+
+window:
+  opacity: 0.85
+
+font:
+  size: 15.0
+  normal:
+    family: HackGen Console
+    style: Regular
+  bold:
+    family: HackGen Console
+    style: Bold
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+    - -l
+    - -c
+    - tmux
+
+colors:
+  primary:
+    background: "#292d3e"
+    foreground: "#ffffff"
+
+  normal:
+    black: "#292d3e"
+    red: "#f07178"
+    green: "#c3e88d"
+    yellow: "#ffcb6b"
+    blue: "#82aaff"
+    magenta: "#c792ea"
+    cyan: "#89ddff"
+    white: "#d0d0d0"
+
+  bright:
+    black: "#434758"
+    red: "#ff8b92"
+    green: "#ddffa7"
+    yellow: "#ffe585"
+    blue: "#9cc4ff"
+    magenta: "#e1acff"
+    cyan: "#a3f7ff"
+    white: "#ffffff"
