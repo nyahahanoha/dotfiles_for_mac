@@ -3,6 +3,9 @@ key_bindings:
 
 window:
   opacity: 0.85
+  padding:
+    x: 8
+    y: 4
 
 font:
   size: 15.0
@@ -19,9 +22,8 @@ shell:
     - --login
     - -l
     - -c
-    - tmux
+    - "/opt/homebrew/bin/tmux a -t 0 || /opt/homebrew/bin/tmux -u"
 
-colors:
   primary:
     background: "#292d3e"
     foreground: "#ffffff"
