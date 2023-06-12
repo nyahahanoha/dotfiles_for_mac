@@ -1,9 +1,8 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-alias ls="ls --color"
+alias ls="ls -1"
 alias mulp="multipass"
-alias t="tmux"
 alias wireshark="open /opt/homebrew/Caskroom/wireshark-chmodbpf/4.0.5/Wireshark.app"
 alias pip='function _pip(){
 	if [ $1 = "search" ]; then
@@ -11,3 +10,4 @@ alias pip='function _pip(){
 	else pip "$@";
 	fi;
 };_pip'
+source "$HOME/.cargo/env"
