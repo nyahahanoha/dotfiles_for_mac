@@ -3,7 +3,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias ls="ls -1"
 alias mulp="multipass"
-alias wireshark="open /opt/homebrew/Caskroom/wireshark-chmodbpf/4.0.5/Wireshark.app"
 alias pip='function _pip(){
 	if [ $1 = "search" ]; then
 		python -m pip_search "$2";
@@ -11,3 +10,4 @@ alias pip='function _pip(){
 	fi;
 };_pip'
 source "$HOME/.cargo/env"
+export PATH="/opt/homebrew/opt/socket_vmnet/bin:$PATH"
