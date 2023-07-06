@@ -1,0 +1,48 @@
+add_newline = true
+format = """
+[░▒▓](#6272a4)\
+[ ](bg:#6272a4 fg:#f8f8f2)\
+[ ](fg:#6272a4 bg:#44475a)\
+$directory\
+[ ](fg:#44475a bg:#6272a4)\
+$username\
+[ ](fg:#6272a4)\
+\n$character"""
+
+right_format = """\
+[ 󱎕](fg:#6272a4)\
+$cmd_duration\
+[ 󱎕](fg:#44475a bg:#6272a4)\
+$time\
+[▓▒░](#44475a)"""
+continuation_prompt = "▶ "
+
+[character]
+disabled = false
+error_symbol = "[❯](bold #ff5555)"
+success_symbol = "[❯](bold #50fa7b)"
+
+[cmd_duration]
+disabled = false
+format = "[$duration](bold fg:#f1fa8c bg:#6272a4)"
+
+[directory]
+disabled = false
+format = "[$path]($style)[$read_only]($read_only_style)"
+read_only = '🔒'
+read_only_style = "bg:#44475a" 
+style = "bold bg:#44475a fg:#50fa7b"
+truncate_to_repo = false
+
+[username]
+disabled = false
+format = "[user: ](bg:#6272a4)[$user]($style)"
+style_root = "bold fg:#ff5555 bg:#6272a4"
+style_user = "bold fg:#50fa7b bg:#6272a4"
+show_always = true
+
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = '%Y/%m/%d/%T'
+style = "bold fg:#bd93f9 bg:#44475a"

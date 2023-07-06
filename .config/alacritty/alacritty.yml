@@ -2,7 +2,7 @@ key_bindings:
   - { key: Return, mods: Command, action: ToggleSimpleFullscreen }
 
 window:
-  opacity: 0.7
+  opacity: 0.85
   padding:
     x: 8
     y: 4
@@ -10,36 +10,17 @@ window:
 font:
   size: 16.0
   normal:
-    family: 'Hackgen35'
+    family: 'Hack Nerd Font Mono'
     style: Regular
   bold:
-    family: 'Hackgen35'
+    family: 'Hack Nerd Font Mono'
     style: Bold
 
-color:
-  primary:
-    background: "#292d3e"
-    foreground: "#ffffff"
+env:
+  TERM: alacritty
 
-  normal:
-    black: "#292d3e"
-    red: "#f07178"
-    green: "#c3e88d"
-    yellow: "#ffcb6b"
-    blue: "#82aaff"
-    magenta: "#c792ea"
-    cyan: "#89ddff"
-    white: "#d0d0d0"
-
-  bright:
-    black: "#434758"
-    red: "#ff8b92"
-    green: "#ddffa7"
-    yellow: "#ffe585"
-    blue: "#9cc4ff"
-    magenta: "#e1acff"
-    cyan: "#a3f7ff"
-    white: "#ffffff"
+import:
+  - ~/.config/alacritty/dracula.yml
 
 shell:
   program: /bin/zsh
