@@ -5,8 +5,8 @@ set autoindent
 set smartcase
 set cursorline
 set wrap
-set paste
-inoremap <silent> qq <ESC>
+inoremap qq <esc>
+vnoremap qq <esc>
 
 packadd! dracula
 syntax enable

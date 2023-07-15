@@ -1,11 +1,12 @@
 alias ls="ls -1 --color"
 alias ll="ls -l"
 alias la="ls -la"
+#alias kubectl="minikube kubectl --"
 
 alias mulp="multipass"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
-#export PROMPT="%~ > "
+source "$HOME/.cargo/env"
 
 zplug "zsh-users/zsh-syntax-highlighting"
 
@@ -17,8 +18,6 @@ if ! zplug check --verbose; then
 fi
 
 HISTFILE=$HOME/.zsh_history
-
-
 
 zplug load
 
