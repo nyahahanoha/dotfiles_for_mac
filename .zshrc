@@ -1,7 +1,7 @@
 alias ls="ls -1 --color"
 alias ll="ls -l"
 alias la="ls -la"
-#alias kubectl="minikube kubectl --"
+alias kubectl="minikube kubectl --"
 
 alias mulp="multipass"
 eval "$(/opt/homebrew/bin/brew shellenv)"
