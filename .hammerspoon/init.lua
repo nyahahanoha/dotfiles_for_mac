@@ -21,3 +21,6 @@ hs.hotkey.bind({"ctrl"}, "space", function()
     MoveActiveScreen(app)
   end
 end)
+
+hs.loadSpoon("ShiftIt")
+spoon.ShiftIt:bindHotkeys({})

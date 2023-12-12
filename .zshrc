@@ -1,23 +1,20 @@
 alias ls="ls -1 --color"
 alias ll="ls -l"
 alias la="ls -la"
-alias kubectl="minikube kubectl --"
+alias mydig="docker exec dig dig"
+alias vim="nvim"
 
-alias mulp="multipass"
+function keyscan() {
+	host=$1
+	echo "delete $host from known_hosts"
+	ssh-keygen -R $host
+	echo "add $host to known_hosts"
+	ssh-keyscan -H $host >> /Users/nyahahanoha/.ssh/known_hosts
+}
+
+#alias searchport="python3 ~/tools/port.py $1 $2"
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(starship init zsh)"
 source "$HOME/.cargo/env"
-
-zplug "zsh-users/zsh-syntax-highlighting"
-
-if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-
-HISTFILE=$HOME/.zsh_history
-
-zplug load
+PROMPT='> '
+export LESS="-iR"
 

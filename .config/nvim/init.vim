@@ -16,7 +16,11 @@ set matchpairs& matchpairs+=<:>
 nnoremap dl "_dd
 inoremap <silent> jj <ESC>
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
+	" language
+	Plug 'vim-syntastic/syntastic'
+	" rust
+	Plug 'rust-lang/rust.vim'
 	" 括弧
 	" 閉じ括弧の自動作成、その他括弧関係諸々
 	Plug 'cohama/lexima.vim'
@@ -27,6 +31,10 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 syntax enable
+filetype plugin indent on
+
+" rust
+let g:rustfmt_autosave = 1
 
 " thema
 colorscheme dracula

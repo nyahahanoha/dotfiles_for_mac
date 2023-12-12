@@ -10,10 +10,10 @@ window:
 font:
   size: 16.0
   normal:
-    family: 'Hack Nerd Font Mono'
+    family: 'Menlo'
     style: Regular
   bold:
-    family: 'Hack Nerd Font Mono'
+    family: 'Menlo'
     style: Bold
 
 env:
