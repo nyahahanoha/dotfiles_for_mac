@@ -1,5 +1,8 @@
 key_bindings:
-  - { key: Return, mods: Command, action: ToggleSimpleFullscreen }
+  - { key: Return,  mods: Command, action: ToggleSimpleFullscreen }
+  - { key: Yen,                    chars: "\x5C"                  }
+  - { key: Yen,     mods: Alt,      chars: "\xA5"                  }
+
 
 window:
   opacity: 0.85
@@ -8,13 +11,22 @@ window:
     y: 4
 
 font:
-  size: 16.0
+  size: 18.0
   normal:
-    family: 'Menlo'
+    family: Meslo LG L
     style: Regular
+
   bold:
-    family: 'Menlo'
+    family: Meslo LG L
     style: Bold
+
+  italic:
+    family: Meslo LG L
+    style: Italic
+
+  bold_italic:
+    family: Meslo LG L
+    style: Bold Italic
 
 env:
   TERM: alacritty
