@@ -1,8 +1,10 @@
 #!/usr/bin/env perl
 
 ## latex commands
-$latex            = 'platex -synctex=1 -halt-on-error';
-$latex_silent     = 'platex -synctex=1 -halt-on-error -interaction=batchmode';
+$latex            = 'uplatex -synctex=1 -halt-on-error';
+#$latex            = 'platex -synctex=1 -halt-on-error';
+$latex_silent     = 'uplatex -synctex=1 -halt-on-error -interaction=batchmode';
+#$latex_silent     = 'platex -synctex=1 -halt-on-error -interaction=batchmode';
 $bibtex           = 'pbibtex -kanji=utf8';
 $dvipdf           = 'dvipdfmx %O -o %D %S';
 $makeindex        = 'mendex %O -o %D %S';

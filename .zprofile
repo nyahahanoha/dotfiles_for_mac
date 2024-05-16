@@ -10,3 +10,9 @@ export CPPUTEST_HOME="$(brew --prefix cpputest)"
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+<<<<<<< HEAD
+=======
+export PATH="$HOME/.go/bin:$PATH"
+
+export GOPATH=$HOME/.go
+>>>>>>> 26236e6 (update)

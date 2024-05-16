@@ -23,3 +23,7 @@ source "$HOME/.cargo/env"
 PROMPT='> '
 export LESS="-iR"
 
+autoload -Uz compinit
+compinit
+alias k="kubectl"
+#source <(kubectl completion bash)
